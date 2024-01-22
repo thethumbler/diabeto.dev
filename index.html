@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href=""  id="myVazaShortcut" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>diabeto</title>
+    <meta property="og:type" content="Website">
+    <link rel="canonical" href="https://diabeto.dev/">
+    <meta property="og:title" content="diabeto">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+
+        @keyframes rotate {
+          from {
+              transform: rotate(0);
+              left: -100px;
+          }
+          to {
+              transform: rotate(2turn);
+              left: 100%;
+          }
+        }
+
+        @keyframes translate {
+          0% {
+              left: -25%;
+          }
+          100% {
+              left: 120%;
+          }
+        }
+
+        .diabeto-parent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .diabeto-parent img {
+            position: absolute;
+            max-width: 100%;
+            animation-name: rotate, translate;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="diabeto-parent">
+        <img src="diabeto.jpg" style="width: 20%;" id="diabeto">
+    </div>
+</body>
+
+</html>
